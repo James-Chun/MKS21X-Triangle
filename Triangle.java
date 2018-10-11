@@ -1,15 +1,25 @@
 public class Triangle {
-    private double[][] points = new double[3][];
-    private String triangleName;
-    
-    public Triangle (double[] point1, double[] point2, double[] point3) {
-        points[0] = point1;
-        points[1] = point2;
-        points[2] = point3;
+    private Point v1 ;
+    private Point v2 ;
+    private Point v3 ;
+
+    public Triangle (double x1, double y1, double x2, double y2, double x3, double y3) {
+        v1 = new Point (x1, y1);
+        v2 = new Point (x2, y2);
+        v3 = new Point (x3, y3);
+    }
+    public Triangle (Point p1, Point p2, Point p3) {
+        v1 = p1;
+        v2 = p2;
+        v3 = p3;
     }
     
+    /*
     public double getPerimeter() {
-        return Math.sqrt( this.point1*this.point1 + point2*point2 ) + Math.sqrt( point3*point3 + point2*point2 ) + Math.sqrt( point1*point1 + point3*point3 );
+        
     }
-    
+    */
+    public String toString() {
+        return "Triangle:" + v1 +" " + v2 + " " + v3;
+    }
 }
