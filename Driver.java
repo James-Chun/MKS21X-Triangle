@@ -5,5 +5,7 @@ public class Driver {
         Point P3 = new Point (1.0,5.0);
         System.out.println ( P1.distanceTo(P2) );
         System.out.println ( P1.distanceTo(P3) );
+        //System.out.println ( distance(P1,P3) );
+        System.out.println (P1);
     }
 }

@@ -24,4 +24,7 @@ public class Point {
     public double distance(Point p1,Point p2) {
         return Math.sqrt( Math.pow(p1.x - p2.x,2) + Math.pow(p2.y - p2.y, 2) );
     }
+    public String toString() {
+        return "X-coord: " + x + " Y-coord: " + y;
+    }
 }
